@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="72dp"
+    android:layout_marginBottom="1dp">
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_vertical"
+        android:src="@drawable/ic_menu_white_24dp"
+        android:tint="@color/abc_secondary_text_material_light"
+        android:background="@android:color/transparent"
+        android:layout_marginLeft="8dp"/>
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_weight="1"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:padding="8dp"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Pronoia"
+            android:id="@+id/queue_SongTitle"
+            android:textSize="16sp"
+            android:lines="1"
+            android:ellipsize="end"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Gesaffelstein"
+            android:id="@+id/queue_Artist"
+            android:textSize="14sp"
+            android:lines="1"
+            android:ellipsize="end"/>
+
+
+
+    </LinearLayout>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:text="9:16"
+        android:id="@+id/queue_Duration"
+        android:layout_marginTop="10dp"
+        android:textSize="12sp"
+        android:lines="1" />
+
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:id="@+id/queue_Overflow"
+        android:layout_gravity="center_vertical"
+        android:src="@drawable/abc_ic_menu_moreoverflow_mtrl_alpha"
+        android:tint="@color/abc_secondary_text_material_light"
+        android:clickable="true"
+        android:focusable="true"
+        android:adjustViewBounds="true"
+        android:background="?attr/selectableItemBackgroundBorderless" />
+</LinearLayout>
